@@ -17,21 +17,6 @@ namespace YourNamespace.Services
             _logger = logger;
         }
 
-        // Method that fetches data from all 3 APIs asynchronously
-        //public async Task<(CatFactResponse catFact, PopulationResponse population, WeatherResponse weather)> GetConsolidatedDataAsync()
-        //{
-
-        //    // Initiating async requests to all three APIs
-        //    var catFactTask = FetchCatFactAsync();
-        //    var populationTask = FetchPopulationAsync();
-        //    var weatherTask = FetchWeatherAsync();
-
-        //    // Await all three tasks to complete asynchronously
-        //    await Task.WhenAll(catFactTask, populationTask, weatherTask);
-
-        //    // Return the results from all API calls
-        //    return (await catFactTask, await populationTask, await weatherTask);
-        //}
         public async Task<(CatFactResponse catFact, PopulationResponse population, WeatherResponse weather, PerformanceMetrics metrics)> GetConsolidatedDataAsync()
         {
             // Measure the time for each API call
