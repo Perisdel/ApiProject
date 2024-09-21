@@ -42,6 +42,7 @@ Response example:
 
 There is a unified end point for the user 
 Unified Endpoint:
+
 URL: /api/consolidated/consolidated-data
-Method: GET
+
 Description: This endpoint aggregates data from the three external APIs and each api call time stamp
